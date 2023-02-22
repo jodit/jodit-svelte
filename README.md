@@ -30,7 +30,7 @@ npm i jodit-svelte
 ```sveltehtml
 <script>
   // Jodit wrapper component
-  import JoditEditor from "jodit/jodit-svelte";
+  import JoditEditor from "jodit-svelte";
   // Use Jodit Community Version
   import "jodit/build/jodit.es2018.en.min.css"
   import {Jodit} from "jodit";

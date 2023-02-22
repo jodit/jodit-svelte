@@ -1,6 +1,6 @@
 {
 	"name": "jodit-svelte",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Svelte3 component for Jodit",
 	"homepage": "https://github.com/jodit/jodit-svelte",
 	"author": "Valerii Chupurniov <chupurnov@gmail.com>",
