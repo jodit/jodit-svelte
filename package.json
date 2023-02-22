@@ -1,0 +1,53 @@
+{
+	"name": "jodit/jodit-svelte",
+	"version": "1.0.0",
+	"description": "Svelte3 component for Jodit",
+	"homepage": "https://github.com/jodit/jodit-svelte",
+	"author": "Valerii Chupurniov <chupurnov@gmail.com>",
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jodit/jodit-svelte"
+	},
+	"main": "dist/index.umd.js",
+	"module": "dist/index.mjs",
+	"svelte": "src/index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"wysiwyg",
+		"rich text",
+		"editor",
+		"html",
+		"contentEditable",
+		"editing",
+		"svelte",
+		"svelte.js",
+		"svelte component",
+		"svelte component jodit",
+		"svelte3 component",
+		"jodit"
+	],
+	"files": [
+		"src",
+		"dist",
+		"README.md",
+		"index.d.ts",
+		"LICENSE.txt"
+	],
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^24.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.0",
+		"jodit": "^3.24.5",
+		"prettier": "^2.8.4",
+		"rollup": "^3.17.2",
+		"rollup-plugin-svelte": "^7.1.3",
+		"svelte": "^3.55.1",
+		"svelte-preprocess": "^5.0.1"
+	}
+}
