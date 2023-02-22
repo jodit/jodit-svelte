@@ -1,6 +1,6 @@
 {
 	"name": "jodit/jodit-svelte",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Svelte3 component for Jodit",
 	"homepage": "https://github.com/jodit/jodit-svelte",
 	"author": "Valerii Chupurniov <chupurnov@gmail.com>",
@@ -15,6 +15,8 @@
 	"svelte": "src/index.js",
 	"types": "index.d.ts",
 	"scripts": {
+		"newversion": "rm -rf dist/ && npm run build && npm version patch --no-git-tag-version && npm run github && npm publish ./",
+		"github": "git add --all  && git commit -m \"New version $npm_package_version. Read more https://github.com/jodit/jodit-svelte/releases/tag/$npm_package_version \" && git tag $npm_package_version && git push --tags origin HEAD:main",
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
 		"prepublishOnly": "npm run build"
